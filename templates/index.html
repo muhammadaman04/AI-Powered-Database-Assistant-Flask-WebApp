@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}ChatDB - Your AI-Powered Database Assistant.{% endblock %}
+{% block content %}
+    <div class="landing-page">
+        <h1>ChatDB</h1>
+        <p>Your AI-Powered Database Assistant.</p>
+        <a href="{{ url_for('db_connect') }}" class="btn">Try Now</a>
+    </div>
+{% endblock %}

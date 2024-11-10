@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #000000 0%, #4a4c4e 100%);
+    margin: 0;
+    padding: 0;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px;
+}
+
+.flash-messages {
+    margin-bottom: 20px;
+}
+
+.alert {
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+/* Landing Page */
+.landing-page {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #212223;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    animation: neoneffect 6s linear infinite;
+}
+
+@keyframes neoneffect {
+    0% {
+        box-shadow: 0 0 10px 5px rgba(5, 13, 19, 0.4), 
+                    0 0 15px 5px rgba(18, 152, 255, 0.4), 
+                    0 0 30px 5px rgba(5, 13, 19, 0.4);
+    }
+    25% {
+        box-shadow: 0 0 10px 5px rgba(18, 152, 255, 0.4), 
+                    0 0 15px 5px rgba(5, 13, 19, 0.4), 
+                    0 0 30px 5px rgba(18, 152, 255, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 10px 5px rgba(5, 13, 19, 0.4), 
+                    0 0 15px 5px rgba(18, 152, 255, 0.4), 
+                    0 0 30px 5px rgba(5, 13, 19, 0.4);
+    }
+    75% {
+        box-shadow: 0 0 10px 5px rgba(18, 152, 255, 0.4), 
+                    0 0 15px 5px rgba(5, 13, 19, 0.4), 
+                    0 0 30px 5px rgba(18, 152, 255, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 10px 5px rgba(5, 13, 19, 0.4), 
+                    0 0 15px 5px rgba(18, 152, 255, 0.4), 
+                    0 0 30px 5px rgba(5, 13, 19, 0.4);
+    }
+}
+
+.landing-page h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    background: linear-gradient(45deg, #438ef9, #046b7d, #c7fce7, #2575fc);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: textGradientShift 3s ease infinite;
+}
+
+@keyframes textGradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.landing-page p {
+    font-size: 1.5rem;
+    color: #f3f3f3;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
+.landing-page .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    background-color: #0058b6;
+    border-radius: 45px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    width: 10vw;
+}
+
+.landing-page .btn:hover {
+    background-color: #023061;
+}
+
+/* Form Page */
+.form-page {
+    padding: 10px 20px;
+    background-color: #212223;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    animation: neoneffect 6s linear infinite; 
+}
+
+.form-page h2 {
+    font-size: 2.5rem;
+    color: #f0f0f0;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.form-group .btn-submit {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #0058b6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    background-color: #f1f5f9;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #4f46e5;
+}
+
+.btn-submit:hover {
+    background-color: #023061;
+}
+
+/* Chat Interface */
+.chat-window {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    background-color: #212223; 
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+    padding: 20px;
+    color: #f0f0f0; 
+    animation: neoneffect 6s linear infinite; 
+}
+
+.chat-window h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0px;
+    color: #ffffff;
+}
+
+.chat-box {
+    margin: 20px 0;
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #3a3f44; 
+    border-radius: 5px;
+    background-color: #292b2f;
+}
+
+.message {
+    margin: 10px 0;
+    padding: 8px;
+    border-radius: 5px;
+    background: rgb(77, 76, 76);
+}
+
+.message.user {
+    background-color: #255292; 
+    color: white;
+    text-align: right;
+}
+
+.message.bot {
+    background-color: #046b7d; 
+    color: white;
+    text-align: left;
+}
+
+.chat-input-container {
+    display: flex;
+    align-items: center;
+    background-color: #333; 
+    padding: 5px;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: auto;
+}
+
+.chat-input {
+    flex-grow: 1;
+    padding: 12px 20px;
+    border: 1px solid #444; 
+    border-radius: 25px;
+    font-size: 1rem;
+    background-color: #2f3336; 
+    color: #f0f0f0;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.chat-input:focus {
+    border-color: #438ef9; 
+}
+
+.chat-input::placeholder {
+    color: rgb(187, 187, 187);
+}
+
+.btn-send {
+    padding: 10px 20px;
+    background-color: #0058b6;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.btn-send i {
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+
+.btn-send:hover {
+    background-color: #023061;
+}
+
+.clear-chat {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn-clear {
+    padding: 8px 16px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.btn-clear:hover {
+    background-color: #c82333;
+}
+
+.btn-back {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #0058b6;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-back:hover {
+    background-color: #023061;
+}
+
+/* Flash Messages */
+.flash-messages {
+    margin-bottom: 20px;
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
+
+.flash-messages.hide {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+#generatingResponse{
+    text-align: center;
+    background: transparent;
+
+}
+
+
+
+
+

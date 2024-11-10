@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Connect to Database{% endblock %}
+{% block content %}
+    <div class="form-page">
+        <h2>Connect to Your MySQL Database</h2>
+        <div class="form-container">
+            <form method="POST">
+                {{ form.hidden_tag() }}
+                <div class="form-group">
+                    {{ form.mysql_host.label }}
+                    {{ form.mysql_host() }}
+                </div>
+                <div class="form-group">
+                    {{ form.mysql_user.label }}
+                    {{ form.mysql_user() }}
+                </div>
+                <div class="form-group">
+                    {{ form.mysql_password.label }}
+                    {{ form.mysql_password() }}
+                </div>
+                <div class="form-group">
+                    {{ form.mysql_db.label }}
+                    {{ form.mysql_db() }}
+                </div>
+                <div class="form-group">
+                    {{ form.submit(class="btn-submit") }}
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
