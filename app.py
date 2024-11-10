@@ -79,7 +79,7 @@ def chat():
         toolkit=toolkit,
         verbose=True,
         agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
-        handle_parsing_errors=True
+        handle_parsing_errors=False
     )
 
     if 'messages' not in session:
