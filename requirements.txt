@@ -4,4 +4,5 @@ Jinja2
 sqlalchemy
 mysql-connector-python
 langchain
+langchain_groq
 python-dotenv
