@@ -5,7 +5,7 @@ from sqlalchemy.exc import SQLAlchemyError
 from langchain_groq import ChatGroq
 from langchain.agents import create_sql_agent, AgentType
 from langchain.sql_database import SQLDatabase
-from langchain.agents.agent_toolkits import SQLDatabaseToolkit
+from langchain_community.agent_toolkits.sql.base import SQLDatabaseToolkit
 from langchain.callbacks import StreamlitCallbackHandler
 from dotenv import load_dotenv
 import os
