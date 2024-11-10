@@ -1,8 +1,8 @@
+langchain-community
 Flask
 Flask-WTF
 Jinja2
 sqlalchemy
 mysql-connector-python
-langchain_community
-langchain_groq
+langchain-groq
 python-dotenv
