@@ -4,4 +4,4 @@ Jinja2
 sqlalchemy
 mysql-connector-python
 langchain
-dotenv
+python-dotenv
