@@ -1,4 +1,5 @@
-langchain-community
+langchain-community==0.1.2
+langchain==0.3.7
 Flask
 Flask-WTF
 Jinja2
