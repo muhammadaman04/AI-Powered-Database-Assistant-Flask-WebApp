@@ -3,7 +3,6 @@ Flask-WTF
 Jinja2
 sqlalchemy
 mysql-connector-python
-langchain
 langchain_community
 langchain_groq
 python-dotenv
